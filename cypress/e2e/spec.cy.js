@@ -3,4 +3,5 @@ describe('Visita site da Sauter', () => {
     cy.visit('https://www.youtube.com/')
     cy.title().should('eq', 'YouTube')
   })
+  
 })
