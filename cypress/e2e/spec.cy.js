@@ -3,5 +3,4 @@ describe('Site do youtube', () => {
     cy.visit('https://sauter.digital/')
     cy.title().should('eq', 'Sauter: Estratégias digitais | Soluções Inovadoras')
   })
-
 })
