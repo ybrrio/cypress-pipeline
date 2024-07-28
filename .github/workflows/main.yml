@@ -19,10 +19,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 20
+
+      - name: Check Node.js Version
+        run: node --version
 
       - name: Install Dependencies
         run: npm install
 
       - name: Run Cypress Tests
-        run: npx cypress run
+        run: DEBUG=cypress:* npx cypress run
